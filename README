@@ -1,0 +1,23 @@
+Micro Frabster
+==============
+The system is designed to allow anyone to easily add more pages and edit the content of the site. It's based on the philosophy that basic HTML is quite a simple and effective way of generating content. You have quite a lot of control over your content, not only with fonts, links, and so forth, but also images, table, and more advanced stuff such as JavaScript. However, duplicating your template, your branding, the livery, is never a good idea. This is where Micro Frabster comes in.
+
+
+How it's supposed to work
+-------------------------
+Most people who create content are happy to be taught a tool or a few basic HTML tags. This gives them the opportunity to create, edit and modify the content without the intervention of any other. The content creators, however, do not like fettling with links, templates and other "fancy pants"-stuff.
+  Micro Frabster allows the content creators to use a standard HTML editor (NVU, Dreamweaver, etc) to create a complete HTML page, and by adding only one line of PHP (which is typically ignored by the HTML editors) they can "frame" their content in the site's branding. It's easy for them to copy an existing web page and rename it, insert the new content and upload it to the webserver. They need never touch the templating system.
+
+
+The Template Design
+-------------------
+You can design your HTML templates in whatever system you want (Text editor, Dreamweaver, etc) and then you can decide how to "frame" the content by choosing the right template in the one-line-PHP-code, you can even make your templates modular, and include logic on when or where things should be displayed. All templates are pure PHP, no strange third party stuff you need to learn (feel free to add whatever makes your life easier).
+
+Technically speaking...
+-----------------------
+Micro Frabster works so that you create a bog-standard HTML page with your content - no branding, layouts, etc, please. You then add a PHP require_once(); code at the top. The require_once(); points at the main template you want to use. The template figures out the settings and what else is included. Then the template opens the calling file, the content file, up for reading and reads all of it. Then the template engine extracts the title, any style-tags and the content of the body-tag. Once it's got all the pieces, it starts printing out your templates, outputting the title, style and the body where you've specified. Finally it stops the execution, otherwise the original content would be displayed beneath your beautifully laid out content.
+  Another thing to point out is that the code is written to be as simple as possible. There's no Object Oriented code (it really doesn't need it!), there's no cryptic regular expressions. Hopefully this simplicity will spur someone on to create more web sites.
+
+Licence
+-------
+MicroFrabster is released under the Mozilla Public License Version 1.1 http://www.mozilla.org/MPL/MPL-1.1.html

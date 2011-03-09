@@ -1,0 +1,77 @@
+html,body {
+	background-color: #FF9;
+	color: #000;
+	font-family: 'Trebuchet MS', 'Tahoma', 'Arial', 'sans-serif';
+}
+
+#main-header>a>h1 {
+	color: black;
+}
+
+#menu {
+	margin-top: 10px;
+	width: 20%;
+	float: left;
+	/*border: 1px solid red;*/
+}
+
+#content {
+	width: 65%;
+	float: left;
+	/*border: 1px solid green;*/
+}
+
+#gutter {
+	width: 10%;
+	float: left;
+	/*border: 1px solid blue;*/
+}
+
+#menu > a { 
+	font-size: 14px;
+	text-align: right;
+	display: block; 
+	padding: 2px;
+	margin-left: 10px;
+	margin-right: 20px;
+	border-left: 2px solid #FFF;
+	border-right: 2px solid #FFF;
+}
+
+#menu > a.first { border-top: 2px solid #FFF; }
+#menu > a.last { border-bottom: 2px solid #FFF; }
+
+#menu > a.selected {
+  font-weight: bold;
+  background-color: #FC6;
+}
+
+#footer {
+	font-size: 10px;
+  text-align: center;
+  color: #666;
+  margin-top: 10px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: bold;
+	border: 0px;
+	margin: 0px;
+	padding-top: 5px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+p {
+	border: 0px;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 8px;
+	padding: 0px;
+}
+
+.code {
+	font-family: 'Courier', 'fixed';
+}
